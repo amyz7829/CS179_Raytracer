@@ -1,0 +1,15 @@
+To compile, use the following command: 
+g++ -g -o raytracer raytracer.cpp raytracer_functions.cpp 
+
+To run, use the following command: 
+./raytracer filepath xres yres
+
+This currently raytraces pixels from the camera to the screen 
+and calculates lighting based on the calculatd normal and the 
+lights that it can reach. (aka can calculate shadows) Note, 
+this is EXTREMELY slow at the moment. Proposed optimizations are
+adding a z-buffer (calculating closest point using ndc space, but 
+using raytracing to add shadows) if the GPU part can be done fast enough. 
+
+Would recommend trying to render the scene_cube1.txt or scene_cube2.txt. Anything 
+with many many faces is very slow. 
