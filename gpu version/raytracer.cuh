@@ -1,3 +1,7 @@
+#include <cstdio>
+#include <cuda_runtime.h>
+using namespace Eigen;
+
 float vector_distance(Vector3d v1, Vector3d v2);
 float vertex_vector_distance(vertex v1, Vector3d v2);
 Vector3d vertexToVector(vertex v);

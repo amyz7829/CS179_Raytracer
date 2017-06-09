@@ -1,5 +1,3 @@
-#include <cstdio>
-#include <cuda_runtime.h>
 #include "raytracer.cuh"
 
 
