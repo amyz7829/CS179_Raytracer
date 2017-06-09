@@ -11,7 +11,9 @@
 #include "../Eigen/Dense"
 #include <sstream>
 #include <map>
+#include <cuda_runtime.h>
 #include "ta_utilities.hpp"
+#include "raytracer.cuh"
 
 using namespace std;
 using namespace Eigen;
